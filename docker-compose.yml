@@ -12,3 +12,10 @@ services:
     networks:
       - wetrust
       - sharednet
+
+
+networks:
+  wetrust:
+    external: true
+  sharednet:
+    external: true
