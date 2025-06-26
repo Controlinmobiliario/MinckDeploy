@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nginx:
+    image: "nginx:stable-alpine"
+    environment:
+      VIRTUAL_HOST: "usuarios.controlinmobiliario.cl"
+      LETSENCRYPT_HOST: "usuarios.controlinmobiliario.cl"
+      LETSENCRYPT_EMAIL: "cristopher@wetrust.cl"
+    networks:
+      - wetrust
+      - sharednet
